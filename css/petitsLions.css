@@ -1,0 +1,417 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+}
+
+/* Nav css */
+#nav {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+}
+
+#nav-logo{
+    left: 10rem;
+    position: relative;
+}
+
+#current-page {
+    color: rgb(228, 16, 16);
+}
+
+/* Dropdown transition */
+#dropdown {
+    position: relative;
+}
+
+#dropdown-content {
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transition: all 275ms ease;
+    transform: translate(0px, -20px);
+    pointer-events: none;
+    display: block;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropdown:hover {
+    & #dropdown-content {
+        transform: translate(0px, 0);
+        pointer-events: initial;
+        opacity: 100;
+        font-size: 1rem;
+    }
+}
+
+/* Dropdown for mobile */
+#mobile-submenu, #right-arrow {
+    display: none;
+}
+
+#mobile-submenu {
+    position: fixed;
+    background-color: white;
+    height: 96vh;
+    top: 0;
+    z-index: 1;
+}
+
+#mobile-submenu .navbar-nav {
+    display: inline-grid;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#mobile-submenu .nav-link {
+    color: rgba(0,0,0,.5);
+}
+
+#mobile-submenu a {
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+#mobile-submenu a:hover {
+    color: rgba( 0,0,0 , 0.8);
+}
+
+/* Header css */
+#class-header {
+    background-image: url(../images/kid_class_bg_blur.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+}
+
+#class-header .container {
+    display: inline-grid;
+}
+
+/* Program css */
+#program {
+    margin-top: 5rem;
+}
+
+#class {
+    padding-bottom: 5rem;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+#class .col {
+    display: inline-flex;
+}
+
+#class h3 {
+    margin-bottom: 2rem;
+}
+
+#courseImg {
+    max-height: 570px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Timeline css */
+#timeline {
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+#timeline h3 {
+    margin-bottom: 3rem;
+}
+
+.timeline-with-icons {
+    border-left: 3px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+}
+  
+.timeline-with-icons .timeline-item {
+    position: relative;
+}
+  
+.timeline-with-icons .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+  
+.timeline-with-icons .timeline-icon {
+    position: absolute;
+    left: -62px;
+    background-color: hsl(217, 88.2%, 75%);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+}
+
+.timeline-with-icons .timeline-item:hover {
+    & .timeline-icon {
+        background-color: hsl(0, 88%, 75%);
+        left: -67px;
+        height: 70px;
+        width: 70px;
+    }
+}
+
+#video {
+    display: inline-flex;
+    justify-content: end;
+}
+
+video {
+    max-height: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.timeline-item h5, .timeline-item p {
+    margin-left: 3rem;
+}
+
+/* Form css */
+#form {
+    padding: 2.5rem 0;
+    background-image: url(../images/kids_sparring_opacity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+iframe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+#form .col:nth-child(2) {
+    display: inline-grid;
+}
+
+#booking {
+    background-color: #000000A6;
+    padding: 2rem 0;
+}
+
+#booking p {
+    margin-bottom: 1.5rem;
+}
+
+#bookBtn {
+    transition: all .25s;
+}
+
+#bookBtn:hover {
+    border-color: #f1ff5c;
+    box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+/* Information css */
+#information {
+    padding: 4rem;
+}
+
+#info-logo {
+    width: 30%;
+}
+
+#reserve-form {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#contact-us, #open-hours {
+    
+    color: rgb(228, 16, 16);
+    font-size: x-large;
+}
+
+#contact-info i {
+    margin-right: 0.8rem;
+}
+
+#information ul {
+    padding: 0;
+}
+
+#information li {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+#media {
+    margin-top: 1rem;
+}
+
+.bi-facebook {
+    margin-right: 0.75rem;
+}
+
+.bi-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+}
+
+#follow-col {
+    width: max-content;
+    padding-top: 0.8rem;
+}
+
+#follow-us {
+    height: 100%;
+    margin: auto;
+}
+
+/* Footer css */
+footer p {
+    height: 100%;
+    margin: auto;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    font-size: 1rem;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1199px) {
+    #nav {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        padding: 1rem;
+    }
+
+    #nav-logo{
+        left: 1rem;
+    }
+
+    #class-header {
+        margin-top: 149.94px;
+    }
+
+    video {
+        max-height: 630px;
+    }
+
+    #form .row {
+        display: grid;
+    }
+
+    #information .row {
+        display: block;
+    }
+
+    #map {
+        margin-top: 2rem;
+        order: 2 !important;
+    }
+
+    #form .col:nth-child(2) {
+        order: 1 !important;
+        margin-bottom: 2rem;
+    }
+
+    #information .col {
+        text-align: center;
+    }
+
+    #other-info, #contact-info {
+        margin-top: 2.5rem;
+    }
+
+    #information #availability {
+        display: flex;
+    }
+
+    #follow-col {
+        display: inline;
+    }
+
+    #info-logo {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #info-logo {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #class {
+        padding-bottom: 3rem;
+    }
+
+    #class .row, #timeline .row {
+        display: block;
+    }
+
+    #class .col:nth-child(2) {
+        margin-top: 3.5rem;
+    }
+
+    #video {
+        display: grid;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #info-logo {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #class {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 603px) {
+    #timeline {
+        padding: 3rem;
+    }
+
+    #benefits {
+        display: inline-grid;
+        justify-content: end;
+        margin-bottom: 3rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #information #availability {
+        display: block;
+    }
+
+    #info-logo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #information {
+        padding: 2.5rem 0;
+    }
+}

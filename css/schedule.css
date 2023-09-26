@@ -1,0 +1,206 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* Nav css */
+#nav {
+    padding: 0;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.navbar-expand-xl .navbar-collapse {
+    width: 100%;
+    max-width: max-content;
+}
+
+#collapsibleNavbar li a {
+    color: black;
+    font-size: 17px;
+}
+
+#collapsibleNavbar li a:hover {
+    color: rgb(107, 107, 107);
+}
+
+#current-page {
+    color: rgb(228, 16, 16);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    height: fit-content;
+    width: 100%;
+}
+
+#logo {
+    width: 10%;
+}
+
+/* Schedule css */
+#schedule {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    /* border-bottom: 2px solid #dbdbdb; */
+}
+
+#schedule-text {
+    margin-top: 5rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#schedule-box {
+    display: flex;
+    justify-content: center; 
+}
+
+/* Form css */
+#form {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    /* border-bottom: 2px solid #dbdbdb; */
+    background-color: rgb(228, 228, 228);
+}
+
+iframe {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+#name-phone .col:nth-child(1){
+    padding-left: 0;
+}
+
+#name-phone .col:nth-child(2){
+    padding-right: 0;
+}
+
+#name-phone {
+    margin-bottom: 0.75rem;
+}
+
+#exampleInputEmail1 {
+    margin-bottom: 0.75rem;
+}
+
+/* Information css */
+#information {
+    padding: 4rem;
+    font-size: large;
+    background-color: rgb(90, 90, 90);
+    color: white;
+}
+
+#info-logo {
+    width: 30%;
+}
+
+#contact-us {
+    font-size: x-large;
+}
+
+#contact-info i {
+    margin-right: 0.8rem;
+}
+
+#information ul {
+    padding: 0;
+}
+
+#information li {
+    list-style-type: none;
+    line-height: 40px;
+}
+
+#media {
+    margin-top: 1rem;
+}
+
+.bi-facebook {
+    margin-right: 0.75rem;
+}
+
+#follow-col {
+    width: max-content;
+    padding-top: 0.8rem;
+}
+
+#follow-us {
+    height: 100%;
+    margin: auto;
+}
+
+i {
+    color: white;
+    /* color: rgb(22, 22, 22); */
+}
+
+/* Footer css */
+footer p {
+    height: 100%;
+    margin: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+@media only screen and (max-width: 1199px) {
+    #form .row, #information .row {
+        display: block;
+    }
+
+    #map {
+        margin-bottom: 2.5rem;
+    }
+    
+    #name-phone .col {
+        padding: 0;
+    }
+
+    #information .col {
+        text-align: center;
+    }
+
+    #other-info, #contact-info {
+        margin-top: 2.5rem;
+    }
+
+    #information #availability {
+        display: flex;
+    }
+
+    #follow-col {
+        display: inline;
+    }
+
+    #info-logo {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #info-logo {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #info-logo {
+        width: 4 0%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #information #availability {
+        display: block;
+    }
+
+    #info-logo {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #information {
+        padding: 2.5rem 0;
+    }
+}
